@@ -9,6 +9,13 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   height: 100vh;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 .containers {
@@ -53,6 +60,30 @@ body {
     margin: 0 auto;
     height: 100vh;
     width: 100%;
+  }
+
+  #div1,
+  #div2,
+  #div3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  html,
+  body {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    width: 60%;
+    height: 60%;
+  }
+
+  .containers {
+    padding-top: 140%;
+    margin: 0 auto;
   }
 
   #div1,
